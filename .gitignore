@@ -1,0 +1,14 @@
+
+*.jpg
+
+images/portfolio/
+
+*.png
+
+*.ini
+
+images/\.DS_Store
+
+*.pdf
+
+*.gslides
