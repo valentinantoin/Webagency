@@ -22,7 +22,7 @@ h3 {
   100% { transform: translateX(0); }
 }
 
-header > nav > ul,
+header ul,
 .slider figure,
 menu > li {
   padding: 0;
@@ -113,8 +113,8 @@ figcaption {
 
 header,
 .slider,
-.portfolio > figure > img,
-.illustration > figure > img,
+.portfolio img,
+.illustration img,
 footer,
 li,
 figcaption {
@@ -133,7 +133,7 @@ h4 + p {
   margin: 2%;
 }
 
-.presentation > h1,
+.presentation h1,
 .fa-caret-down {
   color: #5896A8;
 }
@@ -233,7 +233,7 @@ nav li:hover {
   animation: 10s slide infinite;
 }
 
-.slider figure img {
+.slider img {
   width: 50%;
   height: auto;
 }
@@ -589,7 +589,7 @@ nav:hover ul {
   display: flex;
 }
 
-header > nav > ul {
+header ul {
   display: flex;
   margin: 2rem;
 }
@@ -732,7 +732,7 @@ header {
   align-items: center;
 }
 
-header > nav > ul {
+header ul {
   display: flex;
   justify-content: space-around;
 }
@@ -778,7 +778,7 @@ a:hover {
   margin-bottom: 5rem;
 }
 
-.list > section > h3,
+.list h3,
 h3 + p {
   text-align: left;
 }
@@ -835,10 +835,6 @@ menu {
 
 .container {
   margin-top: 2rem;
-}
-
-div > nav > label {
-  width: 5%;
 }
 
 
