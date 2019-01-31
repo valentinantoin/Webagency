@@ -1,0 +1,904 @@
+
+/*---   GLOBAL   ------------------------------------------------*/
+
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+@keyframes slide {
+  40% { transform: translateX(0); }
+  50% { transform: translateX(-50%); }
+  90% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+header > nav > ul,
+.slider figure,
+menu > li {
+  padding: 0;
+}
+
+.button {
+  border-radius: 0.3rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-bottom: 0.3rem solid #5896A8;
+}
+
+.button:hover {
+  background-color: #5896A8;
+}
+
+h1 {
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.intro > p {
+  padding-top: 1.5rem;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.dot {
+  margin-top: -8px;
+}
+
+.button,
+.fa-eye,
+label:hover,
+.fab:hover {
+  background-color: #5cadd3;
+}
+
+
+.article {
+  padding-top: 7rem;
+}
+
+.logo,
+.title,
+.intro,
+.list,
+li,
+.presentation,
+label,
+.form,
+form,
+footer {
+  text-align: center;
+}
+
+
+.intro,
+.illustration {
+  align-items: center;
+}
+
+.button,
+.arrow,
+.presentation,
+figcaption {
+  color: white;
+}
+
+.dot ,
+.dots,
+.icons,
+.fab {
+  color: #5cadd3;
+}
+
+.dot,
+.dots,
+.icons,
+.fa-eye {
+  border-radius: 50%;
+}
+
+header,
+.slider,
+.portfolio > figure > img,
+.illustration > figure > img,
+footer,
+li,
+figcaption {
+  width: 100%;
+}
+
+
+.dot,
+.dots,
+.fa-eye {
+  border: 3px solid white;
+}
+
+h4,
+h4 + p {
+  margin: 2%;
+}
+
+.presentation > h1,
+.fa-caret-down {
+  color: #5896A8;
+}
+
+.line {
+  height: 1px;
+  width: 8rem;
+  background-color: rgba(232, 232, 232, 1);
+}
+
+
+
+
+
+/*---   HEADER   ---------------------------------------------------*/
+
+
+header{
+  max-width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: black;
+}
+
+figure > a:hover {
+  border: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header > figure {
+  padding: 0.5rem 0;
+}
+
+header img {
+  width: 100%;
+}
+
+
+header ul {
+  display: none;
+}
+
+.deroulant {
+  margin: 2rem 2rem;
+}
+.deroulant i {
+  color: #5cadd3;
+}
+
+nav:hover ul {
+  display: block;
+  line-height: 2rem;
+}
+
+nav ul {
+  margin-left: 2rem;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #5cadd3;
+}
+
+
+
+
+/*---   SLIDER   -----------------------------------------------------*/
+
+
+.slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider figure {
+  
+  width: 200%;
+  margin: 0;
+  font-size: 0;
+  left: 0;
+  animation: 10s slide infinite;
+}
+
+.slider figure img {
+  width: 50%;
+  height: auto;
+}
+
+.presentation {
+  position: relative;
+  bottom: 7.5rem;
+}
+
+section > h1 {
+  font-size: 1rem;
+}
+
+section > h1,
+section > h1 + p {
+  font-weight: bold;
+  line-height: 0.1rem;
+}
+
+.slider i:nth-child(3) {
+  border-radius: 0 2rem 2rem 0;
+  padding: 1.5rem 1rem 1.5rem 0.2rem;
+} 
+
+.slider i:nth-child(4) {
+  border-radius: 2rem 0 0 2rem;
+  padding: 1.5rem 0.2rem 1.5rem 1rem;
+  right: 0;
+}
+
+.slider > i {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 35%;
+}
+
+.timeline {
+  width: 100%;
+  height: 0.3rem;
+  position: relative;
+  bottom: 0.3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.time {
+  width: 10%;
+  height: 0.3rem;
+  background-color: #68B0C5;
+}
+
+
+
+
+/*---   SERVICES SECTION   -------------------------------------------*/
+
+
+.illustration {
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration > figure {
+  display: none;
+}
+
+.list {
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.icons {
+  border: 1px solid rgba(232, 232, 232, 1);
+  padding: 1rem;
+}
+
+.dots {
+  margin-left: -0.8rem;
+}
+
+h3 + p {
+  text-align: justify;
+}
+
+
+
+
+
+/*---   PROJECTS SECTION   --------------------------------------------*/
+
+
+article:nth-of-type(2) {
+  background-color: rgba(245, 245, 245, 1);
+  box-shadow: 0 -2rem 4rem 1rem rgba(245, 245, 245, 1),
+              0 2rem 4rem 2rem rgba(245, 245, 245, 1);
+}
+
+menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(220,220,220,1);
+  padding-top: 1rem;
+  cursor: pointer;
+}
+
+menu > li:first-child > label {
+  border-radius: 5px 0 0 5px;
+}
+
+menu > li:last-child > label {
+  border-radius: 0 5px 5px 0;
+}
+
+ div input:first-child:checked ~ menu li:first-child label,
+ div input:nth-child(2):checked ~ menu li:nth-child(2) label,
+ div input:nth-child(3):checked ~ menu li:nth-child(3) label,
+ div input:nth-child(4):checked ~ menu li:nth-child(4) label { 
+  background-color: #5cadd3;
+  border-bottom: 0.3rem solid #5896A8;
+  color: white;
+}
+
+.fa-caret-down {
+  position: absolute;
+  left: 50%;
+  bottom: -0.8rem;
+  opacity: 0;
+}
+
+div input:first-child:checked ~ menu li:first-child .fa-caret-down,
+div input:nth-child(2):checked ~ menu li:nth-child(2) .fa-caret-down,
+div input:nth-child(3):checked ~ menu li:nth-child(3) .fa-caret-down,
+div input:nth-child(4):checked ~ menu li:nth-child(4) .fa-caret-down {
+  opacity: 1;
+}
+
+div input {
+  display: none;
+}
+
+.all {
+  display: none;
+}
+
+div input:first-child:checked ~ .portfolio .all,
+div input:nth-child(2):checked ~ .portfolio .creative,
+div input:nth-child(3):checked ~ .portfolio .corporate,
+div input:nth-child(4):checked ~ .portfolio .portf {
+  display: block;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.portfolio > figure {
+  position: relative;
+}
+
+figcaption {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.fa-eye {
+  padding: 1rem 1rem;
+  position: absolute;
+  right: 2rem;
+  top: -1.5rem;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  height: 30%;
+  transition: 0.8s ease;
+}
+
+
+
+
+
+/*---   CONTACT SECTION   --------------------------------------------*/
+
+
+.form h3 {
+  font-size: 1.8rem;
+}
+
+iframe {
+  width: 100%;
+  height: 40rem;
+  opacity: 0.5;
+  border: none;
+}
+.blue {
+  background-color: rgba(68, 140, 179, 1);
+  width: 80%;
+  height: 40rem;
+  margin: 3rem 10%;
+}
+
+form {
+  margin-top: 3rem;
+}
+
+form > input,
+textarea {
+  display: inline-block;
+  width: 70%;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 2px solid rgba(230, 230, 230, 1);
+  font-family: Roboto;
+}
+
+span {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+
+
+
+
+
+/*---   FOOTER   ------------------------------------------------------*/
+
+
+/* possible amelioration
+
+footer {
+  background-color: rgba(220, 220, 220, 1);
+  box-shadow: 0 -2rem 4rem 2rem rgba(220, 220, 220, 1);
+
+}
+
+footer > a:hover {
+  border-top: none;
+}
+
+.fab {
+  width: 6rem;
+  transition-duration: 1s;
+  margin: 1rem 0;
+}
+
+.fab:hover {
+  color: white;
+  border-radius: 2rem;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       /*---   MEDIAQ   ---*/
+
+
+/*---   MEDIAQ IPHONE 5 LANDSCAPE   ----------------------------------------------------------------------*/
+
+
+@media (min-width: 568px) {
+
+.presentation {
+  bottom: 12rem;
+}
+
+header {
+  justify-content: space-evenly;
+}
+}
+
+
+
+/*---   MEDIAQ TAB   -------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+
+
+/*---   HEADER   ---*/
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.deroulant {
+  display: none;
+}
+
+nav li:hover {
+  border-bottom: none;
+}
+
+nav:hover ul {
+  display: flex;
+}
+
+header > nav > ul {
+  display: flex;
+  margin: 2rem;
+}
+
+a:hover {
+  border-top: 0.2rem solid #68B0C5;
+  padding-top: 2.5rem;
+}
+
+li {
+  padding: 0 1rem;
+}
+
+
+
+
+
+
+/*---   SLIDER   ---------------------------------------------------------------------------------*/
+
+
+.presentation {
+  width: 45%;
+  bottom: 16rem;
+  left: 3rem;
+  text-align: left;
+
+}
+
+ section > h1,
+ section > h1 + p {
+   display: inline;
+   font-size: 2.5rem;
+   line-height: 2.5rem;
+}
+
+.slider > i {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 40%;
+}
+
+
+
+
+
+/*---   SERVICES SECTION   ------------------------------------------------------------------------*/
+
+
+.illustration > figure {
+  display: block;
+}
+
+.list {
+  display: flex;
+}
+
+h3 + p {
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+
+
+
+
+/*---   PROJECTS SECTION   -------------------------------------------------------------------------*/
+
+
+menu {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.portfolio > figure {
+  width: 35%;
+  margin-top: 3rem;
+}
+
+
+
+
+
+/*---   CONTACT SECTION   --------------------------------------------------------------------------*/
+
+
+form > input,
+textarea {
+  display: inline-block;
+  width: 50%;
+  line-height: 1.8rem;
+}
+
+
+
+
+
+
+/*---   MEDIAQ DESKTOP   ------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/
+
+@media (min-width: 1224px) {
+
+
+/*---   GLOBAL   -----------------------------------------------------------------------------*/
+
+.form,
+form > input:last-child {
+    text-align: left;
+}
+
+input,
+textarea,
+.illustration > img {
+    width: 100%;
+  }  
+
+.article {
+  padding-top: 7rem;
+}
+
+
+
+
+
+/*---   HEADER   ---------------------------------------------------------------------------------*/
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul:nth-of-type(1) > li {
+  padding: 0 1rem;
+}
+
+a:hover {
+  border-top: 0.3rem solid #68B0C5;
+  padding-top: 2.5rem;
+}
+
+
+
+
+
+/*---   SLIDER   --------------------------------------------------------------------------*/  
+
+
+.presentation {
+  bottom: 22rem;
+  left: 7rem;
+  width: 40%;
+}
+
+
+
+
+
+/*---   SERVICES SECTION   -------------------------------------------------------------------*/
+
+
+.illustration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 10rem;
+}
+
+.illustration > figure {
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
+.list > section > h3,
+h3 + p {
+  text-align: left;
+}
+
+h3 + p {
+  padding-right: 15rem;
+  text-align: justify;
+}
+
+.icons,
+.dots {
+  float: left;
+}
+
+.icons {
+  margin: 2rem 2rem 3rem 0;
+}
+
+.dots {
+  margin: 3.5rem 0 0 -2.6rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+
+
+
+
+/*---   PROJECTS SECTION   ------------------------------------------------------------------*/
+
+
+menu {
+  width: 20%;
+  margin-left: 40%;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  padding-right: 12rem;
+  justify-content: space-evenly;
+}
+
+.portfolio > figure {
+  width: 20%;
+  margin: 1.5rem 0.2rem;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+div > nav > label {
+  width: 5%;
+}
+
+
+
+
+
+/*---   CONTACT   ----------------------------------------------------------------------------------*/
+
+
+body > aside {
+  position: relative;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  margin: 0;
+  height: 52rem;
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.form {
+  background-color: rgba(250, 250, 250, 0.8);
+  z-index: 2;
+  width: 22%;
+  padding: 1rem 2rem;
+  position: relative;
+  top: 29rem;
+  left: 62%;
+}
+
+form > input {
+  width: 100%;
+}  
+
+.blue {
+  background-color: rgba(68, 140, 179, 1);
+  height: 52rem;
+  margin-top: -20rem;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+address {
+  color: grey;
+}
+
+form > input:last-child {
+  width: 50%;
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  text-align: left;
+  margin-top: 1rem;
+} 
+
+}
+
+@media (min-width: 1440px) {
+
+.presentation {
+  bottom: 30rem;
+  left: 15rem;
+  width: 35%;
+}
+
+}
