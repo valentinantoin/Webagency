@@ -7,6 +7,14 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
 @keyframes slide {
   40% { transform: translateX(0); }
   50% { transform: translateX(-50%); }
