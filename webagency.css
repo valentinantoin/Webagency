@@ -483,8 +483,6 @@ span {
 /*---   FOOTER   ------------------------------------------------------*/
 
 
-/* possible amelioration
-
 footer {
   background-color: rgba(220, 220, 220, 1);
   box-shadow: 0 -2rem 4rem 2rem rgba(220, 220, 220, 1);
@@ -505,7 +503,6 @@ footer > a:hover {
   color: white;
   border-radius: 2rem;
 }
-*/
 
 
 
