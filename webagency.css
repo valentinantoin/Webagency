@@ -1,6 +1,9 @@
 
 /*---   GLOBAL   ------------------------------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Roboto;
@@ -128,8 +131,8 @@ figcaption {
   border: 3px solid white;
 }
 
-h4,
-h4 + p {
+figcaption h3,
+h3 + p {
   margin: 2%;
 }
 
@@ -412,6 +415,10 @@ figcaption {
   opacity: 0;
 }
 
+figcaption h3 {
+  font-size: 1rem;
+}
+
 .fa-eye {
   padding: 1rem 1rem;
   position: absolute;
@@ -546,18 +553,22 @@ footer > a:hover {
 
 
 /*---   MEDIAQ IPHONE 5 LANDSCAPE   ----------------------------------------------------------------------*/
-
+/*---------------------------------------------------------------*/
 
 @media (min-width: 568px) {
 
-.presentation {
-  bottom: 12rem;
+  .presentation {
+    bottom: 12rem;
+  }
+
+  header {
+    justify-content: space-evenly;
+  }
 }
 
-header {
-  justify-content: space-evenly;
-}
-}
+
+
+
 
 
 
@@ -570,125 +581,113 @@ header {
 /*---   HEADER   ---*/
 
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-.deroulant {
-  display: none;
-}
+  .deroulant {
+    display: none;
+  }
 
-nav li:hover {
-  border-bottom: none;
-}
+  nav li:hover {
+    border-bottom: none;
+  }
 
-nav:hover ul {
-  display: flex;
-}
+  nav:hover ul {
+    display: flex;
+  }
 
-header ul {
-  display: flex;
-  margin: 2rem;
-}
+  header ul {
+    display: flex;
+    margin: 2rem;
+  }
 
-a:hover {
-  border-top: 0.2rem solid #68B0C5;
-  padding-top: 2.5rem;
-}
+  a:hover {
+    border-top: 0.2rem solid #68B0C5;
+    padding-top: 2.5rem;
+  }
 
-li {
-  padding: 0 1rem;
-}
-
-
-
-
-
+  li {
+    padding: 0 1rem;
+  }
 
 /*---   SLIDER   ---------------------------------------------------------------------------------*/
 
+  .presentation {
+    width: 45%;
+    bottom: 16rem;
+    left: 3rem;
+    text-align: left;
 
-.presentation {
-  width: 45%;
-  bottom: 16rem;
-  left: 3rem;
-  text-align: left;
+  }
 
-}
+   section > h1,
+   section > h1 + p {
+     display: inline;
+     font-size: 2.5rem;
+     line-height: 2.5rem;
+  }
 
- section > h1,
- section > h1 + p {
-   display: inline;
-   font-size: 2.5rem;
-   line-height: 2.5rem;
-}
-
-.slider > i {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 40%;
-}
-
-
-
-
+  .slider > i {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 40%;
+  }
 
 /*---   SERVICES SECTION   ------------------------------------------------------------------------*/
 
 
-.illustration > figure {
-  display: block;
-}
+  .illustration > figure {
+    display: block;
+  }
 
-.list {
-  display: flex;
-}
+  .list {
+    display: flex;
+  }
 
-h3 + p {
-  text-align: justify;
-  padding: 0 2rem;
-}
-
-
-
-
+  h3 + p {
+    text-align: justify;
+    padding: 0 2rem;
+  }
 
 /*---   PROJECTS SECTION   -------------------------------------------------------------------------*/
 
+  menu {
+    width: 50%;
+    margin-left: 25%;
+  }
 
-menu {
-  width: 50%;
-  margin-left: 25%;
-}
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-.portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  .portfolio > figure {
+    width: 35%;
+    margin-top: 3rem;
+  }
 
-.portfolio > figure {
-  width: 35%;
-  margin-top: 3rem;
-}
-
-
-
-
+  h3 + p {
+    text-align: left;
+    padding: 0;
+  }
 
 /*---   CONTACT SECTION   --------------------------------------------------------------------------*/
 
-
-form > input,
-textarea {
-  display: inline-block;
-  width: 50%;
-  line-height: 1.8rem;
+  form > input,
+  textarea {
+    display: inline-block;
+    width: 50%;
+    line-height: 1.8rem;
+  }
 }
+
+
 
 
 
@@ -703,206 +702,196 @@ textarea {
 
 /*---   GLOBAL   -----------------------------------------------------------------------------*/
 
-.form,
-form > input:last-child {
-    text-align: left;
-}
+  .form,
+  form > input:last-child {
+      text-align: left;
+  }
 
-input,
-textarea,
-.illustration > img {
-    width: 100%;
-  }  
+  input,
+  textarea,
+  .illustration > img {
+      width: 100%;
+    }  
 
-.article {
-  padding-top: 7rem;
-}
-
-
-
-
+  .article {
+    padding-top: 7rem;
+  }
 
 /*---   HEADER   ---------------------------------------------------------------------------------*/
 
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+  header ul {
+    display: flex;
+    justify-content: space-around;
+  }
 
-header ul {
-  display: flex;
-  justify-content: space-around;
-}
+  ul:nth-of-type(1) > li {
+    padding: 0 1rem;
+  }
 
-ul:nth-of-type(1) > li {
-  padding: 0 1rem;
-}
-
-a:hover {
-  border-top: 0.3rem solid #68B0C5;
-  padding-top: 2.5rem;
-}
-
-
-
-
+  a:hover {
+    border-top: 0.3rem solid #68B0C5;
+    padding-top: 2.5rem;
+  }
 
 /*---   SLIDER   --------------------------------------------------------------------------*/  
 
-
-.presentation {
-  bottom: 22rem;
-  left: 7rem;
-  width: 40%;
-}
-
-
-
-
+  .presentation {
+    bottom: 22rem;
+    left: 7rem;
+    width: 40%;
+  }
 
 /*---   SERVICES SECTION   -------------------------------------------------------------------*/
 
+  .illustration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+  }
 
-.illustration {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 10rem;
-}
+  .illustration > figure {
+    width: 70%;
+    margin-bottom: 5rem;
+  }
 
-.illustration > figure {
-  width: 70%;
-  margin-bottom: 5rem;
-}
+  .list h3,
+  h3 + p {
+    text-align: left;
+  }
 
-.list h3,
-h3 + p {
-  text-align: left;
-}
+  h3 + p {
+    padding-right: 15rem;
+    text-align: justify;
+  }
 
-h3 + p {
-  padding-right: 15rem;
-  text-align: justify;
-}
+  .icons,
+  .dots {
+    float: left;
+  }
 
-.icons,
-.dots {
-  float: left;
-}
+  .icons {
+    margin: 2rem 2rem 3rem 0;
+  }
 
-.icons {
-  margin: 2rem 2rem 3rem 0;
-}
+  .dots {
+    margin: 3.5rem 0 0 -2.6rem;
+  }
 
-.dots {
-  margin: 3.5rem 0 0 -2.6rem;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-}
-
-
-
-
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 
 /*---   PROJECTS SECTION   ------------------------------------------------------------------*/
 
+  menu {
+    width: 20%;
+    margin-left: 40%;
+  }
 
-menu {
-  width: 20%;
-  margin-left: 40%;
-}
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    padding-right: 12rem;
+    justify-content: space-evenly;
+  }
 
-.portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 4rem;
-  padding-right: 12rem;
-  justify-content: space-evenly;
-}
+  .portfolio > figure {
+    width: 20%;
+    margin: 1.5rem 0.2rem;
+  }
 
-.portfolio > figure {
-  width: 20%;
-  margin: 1.5rem 0.2rem;
-}
+  .container {
+    margin-top: 2rem;
+  }
 
-.container {
-  margin-top: 2rem;
-}
-
-
-
-
+  h3 + p {
+    padding: 0;
+    text-align: left;
+  }
 
 /*---   CONTACT   ----------------------------------------------------------------------------------*/
 
+  body > aside {
+    position: relative;
+  }
 
-body > aside {
-  position: relative;
+  iframe {
+    width: 100%;
+    border: none;
+    margin: 0;
+    height: 52rem;
+    opacity: 0.5;
+    background-color: #000;
+  }
+
+  .form {
+    background-color: rgba(250, 250, 250, 0.8);
+    z-index: 2;
+    width: 22%;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 29rem;
+    left: 62%;
+  }
+
+  form > input {
+    width: 100%;
+  }  
+
+  .blue {
+    background-color: rgba(68, 140, 179, 1);
+    height: 52rem;
+    margin-top: -20rem;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  address {
+    color: grey;
+  }
+
+  form > input:last-child {
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  form {
+    text-align: left;
+    margin-top: 1rem;
+  } 
 }
 
-iframe {
-  width: 100%;
-  border: none;
-  margin: 0;
-  height: 52rem;
-  opacity: 0.5;
-  background-color: #000;
-}
 
-.form {
-  background-color: rgba(250, 250, 250, 0.8);
-  z-index: 2;
-  width: 22%;
-  padding: 1rem 2rem;
-  position: relative;
-  top: 29rem;
-  left: 62%;
-}
 
-form > input {
-  width: 100%;
-}  
 
-.blue {
-  background-color: rgba(68, 140, 179, 1);
-  height: 52rem;
-  margin-top: -20rem;
-  width: 100%;
-  margin-left: 0;
-  margin-bottom: 0;
-}
 
-address {
-  color: grey;
-}
 
-form > input:last-child {
-  width: 50%;
-  text-align: center;
-  font-weight: bold;
-}
 
-form {
-  text-align: left;
-  margin-top: 1rem;
-} 
 
-}
+/*---   MEDIAQ DESKTOP BIG SCREEN-------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
 
 @media (min-width: 1440px) {
 
-.presentation {
-  bottom: 30rem;
-  left: 15rem;
-  width: 35%;
-}
-
+  .presentation {
+    bottom: 30rem;
+    left: 15rem;
+    width: 35%;
+  }
 }
