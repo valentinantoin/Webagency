@@ -426,7 +426,7 @@ figcaption h3 {
   top: -1.5rem;
 }
 
-figure:hover figcaption {
+.portfolio figure:hover figcaption {
   opacity: 1;
   height: 30%;
   transition: 0.8s ease;
@@ -766,8 +766,8 @@ span {
 /*---   PROJECTS SECTION   ------------------------------------------------------------------*/
 
   menu {
-    width: 20%;
-    margin-left: 40%;
+    width: 30%;
+    margin-left: 35%;
   }
 
   .portfolio {
@@ -857,13 +857,16 @@ span {
 /*---   MEDIAQ DESKTOP BIG SCREEN-------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
 
-
-
 @media (min-width: 1440px) {
 
   .presentation {
     bottom: 30rem;
     left: 15rem;
     width: 35%;
+  }
+
+  menu {
+    width: 20%;
+    margin-left: 40%;
   }
 }
