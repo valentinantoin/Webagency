@@ -724,7 +724,6 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 4rem;
-    padding-right: 10%;
     justify-content: space-around;
   }
 
@@ -822,10 +821,6 @@ textarea {
   menu {
     width: 20%;
     margin-left: 40%;
-  }
-
-  .portfolio {
-    padding-right: 12%;
   }
 
   .form {
